@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <h1>Hello</h1>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="CSS/styles_dist.css"  />
+    <script src="./main.js" defer></script>
+    <title>TerraceTechフロントエンドエンジニア養成所</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div>
+      <button id="js-open-modal-btn" class="bg-teal-600 hover:bg-teal-400 text-white font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fixed ">Open Modal</button>
+      <div id="js-overlay" class="hidden fixed top-0 left-0 w-full h-full bg-slate-200 opacity-50"></div>
+      <div id="js-modal" class="hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-52 bg-rose-100 border border-slate-300 rounded">
+          <div id="js-close-btn" class="absolute top-2 right-5 cursor-pointer">X</div>
+          <button id="js-open-list-button" class="bg-teal-600 hover:bg-teal-400 text-white font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fixed ">Click!</button>
+      </div>
+      <div id="js-loading"></div>
+      <ul id="js-ul"></ul>
+    </div>
   </body>
 </html>
+
+
